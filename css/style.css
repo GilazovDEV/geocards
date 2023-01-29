@@ -211,7 +211,7 @@ body {
 footer {
   position: absolute;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: center;
   background: #f3f3f3;
 }
@@ -338,7 +338,7 @@ footer {
 .btn-error {
   background-color: #a446f8;
   color: #ffffff;
-  padding: 10px 15px 15px 15px;
+  padding: 10px 15px 10px 15px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
