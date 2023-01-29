@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoCards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#">Geo<span class="gradient">Cards</span>.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link main" href="index.html">ГЛАВНАЯ</a>
+                    <a class="nav-link" href="error.html">ФАКТЫ</a>
+                    <a class="nav-link" href="error.html">СТРАНЫ</a>
+                    <a class="nav-link" href="present.html">ПРЕЗЕНТАЦИИ</a>
+                    <a class="nav-link" href="error.html">СПРАВОЧНИК</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="geo-page">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="geo-block">
+                        <div class="geo-text">
+                            <h2 class="gh2">Новые факты уже на сайте &#128293;</h2>
+                            <h1 class="gh1">Изучать <span class="gradient">географию</span>
+                                <br> по карточкам - <span class="joy">весело!</span>
+                            </h1>
+                            <p class="gpargph">Кроме того, здесь ты можешь найти <br>
+                                все презентации с уроков</p>
+                        </div>
+                        <button class="btn" id="btn-present">Перейти к урокам <img src="pict/arrow-right.svg"
+                                alt=""></button>
+                    </div>
+                </div>
+
+                <div class="col geocol">
+                    <div class="geopict">
+                        <img src="pict/chepizdrik.png" width="400px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="static">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="static-block">
+                        <div class="statick-text">
+                            <h1 class="static-h1" data-max="350">0</h1>
+                            <p class="static-p">Опубликовано
+                                <br> фактов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="static-block">
+                        <div class="statick-text">
+                            <h1 class="static-h1" data-max="197">0</h1>
+                            <p class="static-p">Данных
+                                <br> по странам
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="static-block">
+                        <div class="statick-text">
+                            <h1 class="static-h1" data-max="89">0</h1>
+                            <p class="static-p">Доступно
+                                <br> презентаций
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="static-block">
+                        <div class="statick-text">
+                            <h1 class="static-h1" data-max="163">0</h1>
+                            <p class="static-p">Определений
+                                <br> в справочнике
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">Developed by <a class="gradient footer-link" href="https://t.me/dgilyazov">GilazovDEV</a>
+            | Designed by <a class="gradient footer-link" href="https://t.me/aculbert">culbert.</a></p>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function onScroll() {
+                let scrollNumbers = document.querySelectorAll(".static-h1");
+                scrollNumbers.forEach(function (item) {
+                    let numberTop = item.getBoundingClientRect().top,
+                        start = +item.innerHTML,
+                        end = +item.dataset.max;
+                    if (window.pageYOffset > numberTop - window.innerHeight / 0.5) {
+                        this.removeEventListener("scroll", onScroll);
+                        var interval = setInterval(function () {
+                            item.innerHTML = ++start;
+                            if (start == end) {
+                                clearInterval(interval);
+                            }
+                        }, 5);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
