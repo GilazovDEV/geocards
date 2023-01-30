@@ -315,6 +315,48 @@ footer {
   transition: all 0.2s;
 }
 
+/* country page */
+
+.country-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.country-block {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.country-a {
+
+}
+
+.country-title {
+  margin-bottom: 25px;
+}
+
+.country-title h1 {
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+.country-list {
+  margin-bottom: 10px;
+}
+
+.country-list a {
+  color: #090a1d;
+  text-decoration: none;
+  text-transform: unset;
+}
+
+.country-list a:hover {
+  color: #a446f8;
+  transition: all 0.2s;
+}
+
+
 /* error page */
 
 .error-page {
@@ -357,6 +399,25 @@ footer {
 
   .geo-block {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .country-block {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .kek {
+    flex-direction: column;
+  }
+
+  .country-block {
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 0%;
   }
 }
 
