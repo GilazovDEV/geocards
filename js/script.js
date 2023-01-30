@@ -14,17 +14,3 @@ nav.addEventListener('click', function(){
 // btnPresent.addEventListener('click', function(){
 //     alert('лее, ты че жидкий, географию не знаешь?');
 // });
-
-let button = document.getElementById('theme-dark');
-let darkTheme = document.getElementById('theme');
-// let img = document.getElementById('img-theme');
-
-button.onclick = function() {
-    if (darkTheme.getAttribute("href") == "css/white.css"){
-        darkTheme.href = "css/style.css";
-        // img.setAttribute('src', 'pict/theme.png');
-    } else {
-        darkTheme.href = "css/white.css";
-        // img.setAttribute('src', 'pict/dark.png');
-    }
-}
