@@ -346,6 +346,7 @@ footer {
 }
 
 .country-list a {
+  font-size: 19px;
   color: #090a1d;
   text-decoration: none;
   text-transform: unset;
