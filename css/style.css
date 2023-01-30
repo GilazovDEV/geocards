@@ -85,7 +85,8 @@ body {
   margin-right: 35px;
 }
 
-.main, .presentation {
+.main,
+.presentation {
   border-bottom: 2px solid #a446f8;
 }
 
@@ -128,7 +129,8 @@ body {
   margin-top: 100px;
 }
 
-.geo-text {}
+.geo-text {
+}
 
 .gh2 {
   font-family: "Gilroy";
@@ -188,7 +190,8 @@ body {
   padding-bottom: 25px;
 }
 
-.static-text {}
+.static-text {
+}
 
 .static-h1 {
   font-family: "Gilroy";
@@ -289,7 +292,8 @@ footer {
   color: #a446f8;
 }
 
-.category-text {}
+.category-text {
+}
 
 .category-text p {
   font-family: "Gilroy";
@@ -323,13 +327,12 @@ footer {
 }
 
 .country-block {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 500;
   margin-bottom: 35px;
 }
 
 .country-a {
-
 }
 
 .country-title {
@@ -337,7 +340,7 @@ footer {
 }
 
 .country-title h1 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 600;
 }
 
@@ -357,7 +360,6 @@ footer {
   transition: all 0.2s;
 }
 
-
 /* error page */
 
 .error-page {
@@ -366,16 +368,16 @@ footer {
 }
 
 .error-text h2 {
-    font-family: 'Gilroy';
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .error-text p {
-    font-family: 'Gilroy';
-    font-weight: 500;
-    font-size: 19px;
-    margin-bottom: 25px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 25px;
 }
 
 .btn-error {
@@ -388,7 +390,7 @@ footer {
 }
 
 .purple {
-    color: #a446f8;
+  color: #a446f8;
 }
 
 /* adaptation */
@@ -495,4 +497,4 @@ footer {
     margin-top: 10px;
   }
 }
-  
+

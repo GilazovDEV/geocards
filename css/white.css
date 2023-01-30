@@ -1,0 +1,501 @@
+/* подключение шрифтов */
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    background: #090a1d;
+  }
+  
+  /* navbar */
+  
+  .navbar {
+    padding-top: 20px;
+  }
+  
+  .navbar-toggler-icon {
+    border: none;
+    background-image: url("../pict/menu.png");
+    transition: all 0.3s;
+  }
+  
+  .mark-icon {
+    background-image: url("../pict/mark.png");
+    transition: all 0.3s;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-toggler::before {
+    border: none;
+    color: none;
+    text-shadow: none;
+    box-shadow: none;
+  }
+  
+  .navbar-brand {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 32px;
+    margin-right: 35px;
+  }
+  
+  .main,
+  .presentation {
+    border-bottom: 2px solid #a446f8;
+  }
+  
+  .gradient {
+    background-image: linear-gradient(to right, #a446f8, #fea7d3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .nav-link {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #a446f8;
+  }
+  
+  .joy {
+    border-bottom: 5px solid #fea7d3;
+  }
+  
+  /* geopage */
+  
+  .geo-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .geo-block {
+    margin-top: 100px;
+  }
+  
+  .geo-text {
+  }
+  
+  .gh2 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #cecece;
+  }
+  
+  .gh1 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    margin-top: 10px;
+    color: #090a1d;
+  }
+  
+  .gpargph {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #090a1d;
+  }
+  
+  .btn {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background: #090a1d;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .btn:hover {
+    background-color: #a446f8;
+    color: #ffffff;
+  }
+  
+  .geopict {
+    margin-left: 50px;
+  }
+  
+  /* static */
+  
+  .static {
+    background: #fafafa;
+  }
+  
+  .static-block {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .static-text {
+  }
+  
+  .static-h1 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: #090a1d;
+  }
+  
+  .static-p {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #090a1d;
+  }
+  
+  /* footer */
+  
+  footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background: #f3f3f3;
+  }
+  
+  .footer-text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #090a1d;
+  }
+  
+  .footer-link {
+    font-weight: 500;
+  }
+  
+  /* page presentation */
+  
+  .present {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .present-title {
+    margin-bottom: 30px;
+  }
+  
+  .ph1 {
+    font-family: "Gilroy";
+    font-size: 38px;
+    font-weight: 500;
+    color: #090a1d;
+  }
+  
+  .pp {
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 500;
+    color: #090a1d;
+  }
+  
+  /* block present */
+  
+  .dark-blue {
+    color: #090a1d;
+  }
+  
+  .pn1 {
+    font-family: "Gilroy";
+    font-size: 38px;
+    font-weight: 500;
+    color: #090a1d;
+    margin-bottom: 30px;
+  }
+  
+  .present-block {
+    margin-bottom: 20px;
+  }
+  
+  .present-pict img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .present-category {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .present-category p {
+    font-family: "Gilroy";
+    font-size: 20px;
+    font-weight: 700;
+    color: #a446f8;
+  }
+  
+  .category-text {
+  }
+  
+  .category-text p {
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 500;
+    color: #090a1d;
+  }
+  
+  .btn-blue {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    background-color: #a446f8;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid #a446f8;
+    border-radius: 5px;
+  }
+  
+  .btn-blue:hover {
+    border: 1px solid #a446f8;
+    color: #a446f8;
+    background-color: #ffffff;
+    transition: all 0.2s;
+  }
+  
+  /* country page */
+  
+  .country-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .country-block {
+    font-family: "Gilroy";
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+  
+  .country-a {
+  }
+  
+  .country-title {
+    margin-bottom: 25px;
+  }
+  
+  .country-title h1 {
+    font-family: "Gilroy";
+    font-weight: 600;
+  }
+  
+  .country-list {
+    margin-bottom: 10px;
+  }
+  
+  .country-list a {
+    font-size: 19px;
+    color: #090a1d;
+    text-decoration: none;
+    text-transform: unset;
+  }
+  
+  .country-list a:hover {
+    color: #a446f8;
+    transition: all 0.2s;
+  }
+  
+  /* error page */
+  
+  .error-page {
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  .error-text h2 {
+    font-family: "Gilroy";
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .error-text p {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 25px;
+  }
+  
+  .btn-error {
+    background-color: #a446f8;
+    color: #ffffff;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .purple {
+    color: #a446f8;
+  }
+  
+  /* adaptation */
+  
+  @media (max-width: 992px) {
+    .geocol {
+      display: none;
+    }
+  
+    .geo-block {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .country-block {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .kek {
+      flex-direction: column;
+    }
+  
+    .country-block {
+      margin: auto;
+      margin-bottom: 35px;
+      padding: 0%;
+    }
+  }
+  
+  @media (max-width: 426px) {
+    .gh1 {
+      font-size: 32px;
+    }
+  
+    .gh2 {
+      font-size: 20px;
+    }
+  
+    .gpargph {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 18px;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .static-h1 {
+      font-size: 28px;
+    }
+  
+    .static-p {
+      font-size: 18px;
+    }
+  
+    .present-title {
+      text-align: center;
+    }
+  
+    .ph1 {
+      font-family: "Gilroy";
+      font-size: 28px;
+      font-weight: 500;
+      color: #090a1d;
+    }
+  
+    .pp {
+      font-size: 18px;
+    }
+  
+    .pn1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .category-text p {
+      font-size: 16px;
+    }
+  
+    .present-block {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 376px) {
+    .gh1 {
+      font-size: 28px;
+    }
+  
+    .gh2 {
+      font-size: 18px;
+    }
+  
+    .gpargph {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  
+    .btn {
+      margin-top: 10px;
+    }
+  }
+  
+  
