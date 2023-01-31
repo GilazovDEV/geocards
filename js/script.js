@@ -8,9 +8,3 @@ nav.addEventListener('click', function(){
         navicon.classList.add('mark-icon');
     }
 });
-
-// const btnPresent = document.getElementById('btn-present');
-
-// btnPresent.addEventListener('click', function(){
-//     alert('лее, ты че жидкий, географию не знаешь?');
-// });
