@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoCards Квиз</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          >Geo<span class="gradient">Cards</span>.</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+            <a class="nav-link" href="facts.html">ФАКТЫ</a>
+            <a class="nav-link" href="country.html">СТРАНЫ</a>
+            <a class="nav-link" href="present.html">ПРЕЗЕНТАЦИИ</a>
+            <a class="nav-link" href="dictionary.html">СПРАВОЧНИК</a>
+            <a class="nav-link main" href="#">КВИЗ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="present">
+      <div class="container">
+        <div class="quiz-hero reveal">
+          <div class="quiz-hero-badge">Мини-игра по географии</div>
+          <h1 class="ph1">Географический <span class="gradient">квиз</span></h1>
+          <p class="pp">
+            Проверьте себя за 10 вопросов, тренируйте память и следите за лучшей
+            серией без лишней суеты.
+          </p>
+        </div>
+        <div class="quiz-wrap reveal">
+          <div class="quiz-modebar" id="quizModebar">
+            <span class="quiz-modebar-label">Режим</span>
+            <button class="filter-btn active" data-mode="flags">
+              Флаг - страна
+            </button>
+          </div>
+          <div class="quiz-card quiz-card-start" id="quizStart">
+            <div class="quiz-start-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-world"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M3.6 9h16.8" />
+                <path d="M3.6 15h16.8" />
+                <path d="M11.5 3a17 17 0 0 0 0 18" />
+                <path d="M12.5 3a17 17 0 0 1 0 18" />
+              </svg>
+            </div>
+            <div class="quiz-intro-grid">
+              <div class="quiz-stat-card">
+                <strong>10</strong><span>вопросов</span>
+              </div>
+              <div class="quiz-stat-card">
+                <strong>4</strong><span>варианта</span>
+              </div>
+              <div class="quiz-stat-card">
+                <strong>∞</strong><span>повторов</span>
+              </div>
+            </div>
+            <h3>Готовы проверить себя?</h3>
+            <p class="pp">
+              Каждый правильный ответ приносит балл, а серия без ошибок помогает
+              закрепить результат.
+            </p>
+            <ul class="quiz-rules">
+              <li>Быстро узнавайте флаги стран</li>
+              <li>Получайте мгновенную обратную связь</li>
+              <li>Следите за своим личным рекордом</li>
+            </ul>
+            <button type="button" class="btn-blue quiz-btn" id="quizStartBtn">
+              Начать квиз
+            </button>
+          </div>
+          <div class="quiz-card d-none" id="quizGame">
+            <div class="quiz-progress">
+              <span class="quiz-progress-label" id="quizProgressLabel"
+                >Вопрос 1 из 10</span
+              >
+              <div class="quiz-progress-track">
+                <div
+                  class="quiz-progress-fill"
+                  id="quizProgressFill"
+                  style="width: 0%"
+                ></div>
+              </div>
+              <span class="quiz-score" id="quizScoreLabel">Счёт: 0</span>
+            </div>
+
+            <div class="quiz-flag-big" id="quizFlagBig"></div>
+            <p class="quiz-question" id="quizQuestion">—</p>
+            <div class="quiz-options" id="quizOptions"></div>
+            <p
+              class="pp"
+              id="quizFeedback"
+              style="
+                min-height: 22px;
+                font-size: 14px;
+                color: var(--text-muted);
+                margin-top: 14px;
+                opacity: 0;
+                transition: opacity 0.3s;
+              "
+            ></p>
+          </div>
+          <div class="quiz-card d-none" id="quizResult">
+            <div class="quiz-result-emoji" id="quizResultEmoji">🏆</div>
+            <div class="quiz-result-score" id="quizResultScore">0 / 10</div>
+            <p class="pp" id="quizResultText" style="font-size: 16px">-</p>
+            <div class="quiz-streak-badge" id="quizResultStreak">
+              🔥 Лучшая серия подряд: 0
+            </div>
+            <p
+              style="
+                margin-top: 18px;
+                font-family: &quot;Manrope&quot;;
+                font-weight: 600;
+                color: var(--text-muted);
+                font-size: 13px;
+              "
+            >
+              Режим: <span id="quizModeLabel">-</span>
+            </p>
+            <button type="button" class="btn-blue quiz-btn" id="quizRestartBtn">
+              Играть снова
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-text">
+        Developed by
+        <a class="gradient footer-link" href="https://t.me/dgilyazov"
+          >GilazovDEV</a
+        >
+        | Designed by
+        <a class="gradient footer-link" href="https://t.me/aculbert"
+          >culbert.</a
+        >
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

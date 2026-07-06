@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GeoCards страница не найдена</title>
+    <title>GeoCards - Факты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <nav class="navbar navbar-expand-md">
       <div class="container">
@@ -37,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
-            <a class="nav-link" href="facts.html">ФАКТЫ</a>
+            <a class="nav-link main" href="#">ФАКТЫ</a>
             <a class="nav-link" href="country.html">СТРАНЫ</a>
             <a class="nav-link" href="present.html">ПРЕЗЕНТАЦИИ</a>
             <a class="nav-link" href="dictionary.html">СПРАВОЧНИК</a>
@@ -46,21 +45,44 @@
         </div>
       </div>
     </nav>
-
-    <section class="error-page">
+    <section class="present facts-page">
       <div class="container">
-        <div class="error-text reveal">
-          <h2>404 страница <span class="purple">не найдена</span></h2>
-          <p>
-            Похоже, такой страницы не существует, либо она ещё в разработке.
-            Загляните на главную <br />
-            там точно есть, чем заняться.
+        <div class="present-title reveal">
+          <h1 class="ph1">
+            Интересные <span class="gradient">факты</span> о планете
+          </h1>
+          <p class="pp">
+            Собрали самое любопытное о рельефе, климате и странах мира.
           </p>
-          <a class="btn-error" href="index.html">Вернуться на главную</a>
+        </div>
+        <div class="random-fact-block reveal">
+          <div class="random-fact-icon" id="randomFactIcon"></div>
+          <p class="random-fact-text" id="randomFactText">
+            Нажмите кнопку, чтобы узнать случайный факт
+          </p>
+          <button class="btn-blue quiz-btn" id="randomFactBtn" type="button">
+            Новый факт
+          </button>
+        </div>
+        <div class="filter-bar reveal" id="filterBar">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="mountains">
+            Горы и рельеф
+          </button>
+          <button class="filter-btn" data-filter="ocean">Океаны</button>
+          <button class="filter-btn" data-filter="climate">Климат</button>
+          <button class="filter-btn" data-filter="countries">Страны</button>
+          <button class="filter-btn" data-filter="space">Планета</button>
+        </div>
+        <div class="row" id="factsGrid"></div>
+        <div class="present-btn text-center">
+          <button class="btn-blue" id="loadMoreFacts">Показать ещё</button>
+          <p class="load-more-status d-none" id="factsStatus">
+            Показаны все факты по этой теме
+          </p>
         </div>
       </div>
     </section>
-
     <footer>
       <p class="footer-text">
         Developed by
@@ -75,5 +97,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/facts.js"></script>
   </body>
 </html>

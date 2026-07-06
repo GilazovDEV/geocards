@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoCards Справочник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          >Geo<span class="gradient">Cards</span>.</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+            <a class="nav-link" href="facts.html">ФАКТЫ</a>
+            <a class="nav-link" href="country.html">СТРАНЫ</a>
+            <a class="nav-link" href="present.html">ПРЕЗЕНТАЦИИ</a>
+            <a class="nav-link main" href="#">СПРАВОЧНИК</a>
+            <a class="nav-link" href="quiz.html">КВИЗ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="country-page">
+          <div class="reveal">
+            <h1 class="ph1">
+              Справочник <span class="gradient">терминов</span>
+            </h1>
+            <p class="pp">
+              24 определения по географии от климата до тектоники плит
+            </p>
+          </div>
+
+          <div
+            class="random-termin-block reveal"
+            id="termOfDay"
+            style="
+              text-align: left;
+              display: flex;
+              gap: 18px;
+              align-items: center;
+            "
+          >
+            <div>
+              <span class="tag" id="termOfDayBadge" style="margin-bottom: 8px"
+                >Термин</span
+              >
+              <p
+                class="random-fact-text"
+                style="margin: 6px 0 2px; text-align: left"
+              >
+                <b id="termOfDayTitle">—</b>
+              </p>
+              <p
+                class="random-fact-text"
+                id="termOfDayText"
+                style="margin: 0; text-align: left; font-size: 16px"
+              >
+                Термин дня появится здесь.
+              </p>
+            </div>
+          </div>
+
+          <div class="country-search reveal">
+            <input
+              type="text"
+              id="termSearch"
+              class="search-input"
+              placeholder="Поиск термина, например «муссон»..."
+            />
+          </div>
+          <div class="filter-bar reveal" id="termFilterBar">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="relief">Рельеф</button>
+            <button class="filter-btn" data-filter="voda">Вода</button>
+            <button class="filter-btn" data-filter="klimat">Климат</button>
+            <button class="filter-btn" data-filter="geologia">Геология</button>
+            <button class="filter-btn" data-filter="koord">Координаты</button>
+          </div>
+          <p class="search-empty d-none" id="termSearchEmpty">
+            Ничего не найдено. Попробуйте другой запрос.
+          </p>
+        </div>
+
+        <div class="term-list" id="termList"></div>
+      </div>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Developed by
+        <a class="gradient footer-link" href="https://t.me/dgilyazov"
+          >GilazovDEV</a
+        >
+        | Designed by
+        <a class="gradient footer-link" href="https://t.me/aculbert"
+          >culbert.</a
+        >
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dictionary.js"></script>
+  </body>
+</html>

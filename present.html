@@ -1,184 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoCards</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoCards Презентации</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Geo<span class="gradient">Cards</span>.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="index.html">ГЛАВНАЯ</a>
-                    <a class="nav-link" href="error.html">ФАКТЫ</a>
-                    <a class="nav-link" href="country.html">СТРАНЫ</a>
-                    <a class="nav-link presentation">ПРЕЗЕНТАЦИИ</a>
-                    <a class="nav-link" href="error.html">СПРАВОЧНИК</a>
-                </div>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          >Geo<span class="gradient">Cards</span>.</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">ГЛАВНАЯ</a>
+            <a class="nav-link" href="facts.html">ФАКТЫ</a>
+            <a class="nav-link" href="country.html">СТРАНЫ</a>
+            <a class="nav-link presentation" href="#">ПРЕЗЕНТАЦИИ</a>
+            <a class="nav-link" href="dictionary.html">СПРАВОЧНИК</a>
+            <a class="nav-link" href="quiz.html">КВИЗ</a>
+          </div>
         </div>
+      </div>
     </nav>
-
     <section class="present">
-        <div class="container">
-            <div class="present-title">
-                <h1 class="ph1"><span class="gradient">Презентации</span> c уроков</h1>
-                <p class="pp">Все презентации по каждой теме в одном месте</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="present-name">
-                    <h1 class="pn1">5 класс</h1>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c1.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">горы</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Горы — сильно расчленённые части суши, значительно, на 500 метров и более...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c2.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">горы</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Горсты — образуют горные хребты, опущенные блоки — грабены...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c3.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">хз что это</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Образуется путём продавливания океанической коры под другую океаническую...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c4.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">домики</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Дома в снегу, снег на крыше дома, а дома на земле - дома значительно превышают...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="present-btn text-center">
-                    <button class="btn-blue">Показать еще</button>
-                </div>
-
-                <div class="present-name">
-                    <h1 class="pn1">6 класс</h1>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c1.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">горы</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Горы — сильно расчленённые части суши, значительно, на 500 метров и более...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c2.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">горы</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Горсты — образуют горные хребты, опущенные блоки — грабены...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c3.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">хз что это</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Образуется путём продавливания океанической коры под другую океаническую...</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col">
-                    <div class="present-block">
-                        <div class="present-pict">
-                            <img src="pict/c4.jpg" alt="">
-                        </div>
-                        <div class="present-category">
-                            <p>Категория: <span class="dark-blue">домики</span></p>
-                        </div>
-                        <div class="category-text">
-                            <p>Дома в снегу, снег на крыше дома, а дома на земле - дома значительно превышают...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="present-btn text-center">
-                    <button class="btn-blue">Показать еще</button>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="present-title reveal">
+          <h1 class="ph1">
+            <span class="gradient">Презентации</span> c уроков
+          </h1>
+          <p class="pp">
+            Все презентации по каждой теме подгружаются из общей базы GeoCards
+          </p>
         </div>
+        <div class="present-toolbar reveal">
+          <div class="country-search">
+            <input
+              type="text"
+              id="presentSearch"
+              class="search-input"
+              placeholder="Поиск презентации, например «горы»..."
+            />
+          </div>
+          <p class="present-source-note" id="presentSourceNote">
+            Загружаем презентации...
+          </p>
         </div>
+
+        <div class="filter-bar reveal" id="presentFilterBar">
+          <button class="filter-btn active" data-filter="all">Все темы</button>
+          <button class="filter-btn" data-filter="gory">Горы</button>
+          <button class="filter-btn" data-filter="relief">Рельеф дна</button>
+          <button class="filter-btn" data-filter="domiki">
+            Климат и жильё
+          </button>
+        </div>
+
+        <div id="decksGrid" class="row"></div>
+        <p class="filter-empty d-none" id="presentEmpty">
+          По этому запросу презентаций не найдено.
+        </p>
+      </div>
     </section>
+    <div class="modal fade" id="deckModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content country-modal-content">
+          <div
+            class="modal-header country-modal-header"
+            style="align-items: flex-start"
+          >
+            <div>
+              <h1
+                class="modal-title"
+                id="deckModalTitle"
+                style="margin-bottom: 8px"
+              >
+                —
+              </h1>
+              <div class="deck-modal-meta">
+                <span class="tag tag-grade" id="deckModalGrade">-</span>
+                <span class="tag" id="deckModalCategory">-</span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="deck-modal-cover" id="deckModalCover">⛰️</div>
+            <p
+              class="category-text"
+              id="deckModalIntro"
+              style="margin-bottom: 20px"
+            >
+              —
+            </p>
 
+            <div
+              class="modal-row"
+              style="border: none; padding: 0; margin-bottom: 12px"
+            >
+              <b id="deckModalSlideTitle" style="text-align: left">—</b>
+              <span
+                id="deckModalSlideCounter"
+                style="color: var(--text-muted); font-weight: 600"
+                >1 / 4</span
+              >
+            </div>
+            <p class="category-text" id="deckModalSlideText">-</p>
+
+            <div
+              class="d-flex justify-content-between"
+              style="margin-top: 20px"
+            >
+              <button
+                type="button"
+                class="btn-blue"
+                id="deckModalPrev"
+                style="margin: 0"
+              >
+                ← Назад
+              </button>
+              <button
+                type="button"
+                class="btn-blue"
+                id="deckModalNext"
+                style="margin: 0"
+              >
+                Далее →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
-        <p class="footer-text">Developed by <a class="gradient footer-link" href="https://t.me/dgilyazov">GilazovDEV</a>
-            | Designed by <a class="gradient footer-link" href="https://t.me/aculbert">culbert.</a></p>
+      <p class="footer-text">
+        Developed by
+        <a class="gradient footer-link" href="https://t.me/dgilyazov"
+          >GilazovDEV</a
+        >
+        | Designed by
+        <a class="gradient footer-link" href="https://t.me/aculbert"
+          >culbert.</a
+        >
+      </p>
     </footer>
-
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+    <script src="js/present.js"></script>
+  </body>
 </html>
