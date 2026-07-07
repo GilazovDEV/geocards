@@ -58,7 +58,7 @@
 
 ## Авторы
 
-- Разработка — [GilazovDEV](https://t.me/dgilyazov)
+- Разработка — [GilazovDEV](https://t.me/gilazovdev)
 - Дизайн — [culbert.](https://t.me/aculbert)
 
 Данные о странах — REST Countries, погода — Open-Meteo, флаги — flag-icons. Все факты и определения в справочнике написаны вручную для этого проекта.
